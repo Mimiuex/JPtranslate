@@ -40,12 +40,6 @@ class EngVoiceRecorder:
         if self.recording:
             self.recording = False
             self.button.config(text = "⏺", fg = "black")
-
-            """self.label.config(text = "Press the button and start speaking.")"""
-
-            """self.update_file_number()
-            print(Whisper_Translate.Audio_to_Text(self.get_file_number()))""" #<-- DEBUG bode 
-
         else:
             self.recording = True
             self.button.config(text = "■", fg = "red")
@@ -103,7 +97,6 @@ class EngVoiceRecorder:
 
         print("Audio will now be played:\n... ")
         voicevox.text_to_voice(translation)
-
 
 def banner():
     print("\n******-\\\ Please remember to speak to your dedicated microphone clearly! //-******\n")
