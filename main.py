@@ -105,9 +105,15 @@ class EngVoiceRecorder:
         voicevox.text_to_voice(translation)
 
 
-print("\n******-\\\ Please remeber to speak to your dedicated microphone clearly! //-******\n")
-print("                      Enter authentication key for DeepL")
-key = input("Key:".rjust(110//3))
+def banner():
+    print("\n******-\\\ Please remember to speak to your dedicated microphone clearly! //-******\n")
+    print("                      -_.Enter authentication key for DeepL._-")
+    
+
+banner()
+key = input("Key: ".rjust(81//3))
+os.system('cls' if os.name == 'nt' else 'clear')
+
 EngVoiceRecorder()
 
 
