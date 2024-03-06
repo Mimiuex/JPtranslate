@@ -97,6 +97,7 @@ class EngVoiceRecorder:
 
         print("Audio will now be played:\n... ")
         voicevox.text_to_voice(translation)
+        print("- End -")
 
 def banner():
     print("\n******-\\\ Please remember to speak to your dedicated microphone clearly! //-******\n")
