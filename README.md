@@ -18,3 +18,6 @@ Update 06/03:
 
 Switched to DeepL api because DeepL.
 Beginning of program requires user to input their DeepL authetication key in order to access DeepL api.
+
+- This program uses VoiceVox and interacts with it so make sure you download and have it running.
+Download VoiceVox: https://voicevox.hiroshiba.jp/
