@@ -8,7 +8,8 @@ import Whisper_Translate
 #import Text_Translator
 import voicevox
 import DeepL
-
+import VoiceVoxWrapper
+import asyncio
 class EngVoiceRecorder:
     def __init__(self):
         self.root = eng_jp.Tk()
@@ -85,7 +86,6 @@ class EngVoiceRecorder:
 
         self.update_file_number()
         
-
         print("Source language: English")
         print(Whisper_Translate.Audio_to_Text(self.get_file_number()))
 
@@ -96,7 +96,9 @@ class EngVoiceRecorder:
         print(translation)
 
         print("Audio will now be played:\n... ")
-        voicevox.text_to_voice(translation)
+        ###voicevox.text_to_voice(translation)
+        #VoiceVoxWrapper.main(translation, f"recording{self.get_file_number()}.wav")
+        asyncio.run(VoiceVoxWrapper.main(translation, f"recording{self.get_file_number()}.wav"))
         print("- End -")
 
 def banner():
