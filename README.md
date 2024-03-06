@@ -1,4 +1,0 @@
-# JPtranslate
-# JPtranslate
-# JPtranslate
-# JPtranslate
