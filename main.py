@@ -110,7 +110,8 @@ banner()
 key = input("Key: ".rjust(81//3))
 os.system('cls' if os.name == 'nt' else 'clear')
 
-EngVoiceRecorder()
+if __name__ == "__main__":
+    EngVoiceRecorder()
 
 
 
